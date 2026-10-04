@@ -90,7 +90,7 @@ def processCommand(c):
 
 
 if __name__ == "__main__":
-    speak("Initializing Jarvis")
+    speak("Initializing.......................... Say Ultron to activate me..")
 
     while True:
         r = sr.Recognizer()
@@ -110,11 +110,11 @@ if __name__ == "__main__":
             word = r.recognize_google(audio)
             print("You said:", word)
 
-            if word.lower() == "jarvis":
-                speak("Yes sir, I am listening")
+            if word.lower() == "ultron":
+                speak("Ultron Awakening, Plese give me command")
 
                 with sr.Microphone() as source:
-                    print("Jarvis Activated, Please give your command")
+                    print("Ultron here ..")
 
                     audio = r.listen(source)
 

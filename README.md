@@ -1,8 +1,8 @@
-# 🤖 Jarvis – Python Voice Assistant
+# 🤖 Ultron – Python Voice Assistant
 
-Jarvis is a **Python-based voice assistant** that listens for a wake word, understands voice commands, and performs different tasks such as opening websites, playing music, and fetching the latest news.
+Ultron is a **Python-based voice assistant** that listens for a wake word, understands voice commands, and performs different tasks such as opening websites, playing music, and fetching the latest news.
 
-This project is being developed as a learning project to understand **Python, Speech Recognition, APIs, automation, and voice-based applications**. The goal is to gradually turn Jarvis into a more advanced AI assistant by adding features such as **OpenAI integration, natural-language conversations, task automation, and more**.
+This project is being developed as a learning project to understand **Python, Speech Recognition, APIs, automation, and voice-based applications**. The goal is to gradually turn Ultron into a more advanced AI assistant by adding features such as **OpenAI integration, natural-language conversations, task automation, and more**.
 
 ---
 
@@ -10,15 +10,15 @@ This project is being developed as a learning project to understand **Python, Sp
 
 ### 🎙️ Voice Activation
 
-Jarvis continuously listens for the wake word:
+Ultron continuously listens for the wake word:
 
-> **"Jarvis"**
+> **"Ultron"**
 
 Once activated, it listens for the user's command.
 
 ### 🌐 Website Opening
 
-Jarvis can open commonly used websites through voice commands:
+Ultron can open commonly used websites through voice commands:
 
 * Google
 * YouTube
@@ -30,11 +30,11 @@ Jarvis can open commonly used websites through voice commands:
 Example:
 
 ```text
-Jarvis
+Ultron
 → Open Google
 ```
 
-Jarvis responds:
+Ultron responds:
 
 ```text
 Opening Google
@@ -44,12 +44,12 @@ and opens the website automatically.
 
 ### 🎵 Music Playback
 
-Jarvis can play songs using links stored in a separate `musicLibrary.py` file.
+Ultron can play songs using links stored in a separate `musicLibrary.py` file.
 
 Example:
 
 ```text
-Jarvis
+Ultron
 → Play <song>
 ```
 
@@ -57,22 +57,22 @@ The assistant searches the song in the music library and opens its corresponding
 
 ### 📰 News Fetching
 
-Jarvis uses the **NewsAPI** to retrieve current headlines.
+Ultron uses the **NewsAPI** to retrieve current headlines.
 
 When the user says:
 
 ```text
-Jarvis
+Ultron
 → News
 ```
 
-Jarvis requests the latest Indian headlines from NewsAPI and reads the available headlines using Windows text-to-speech.
+Ultron requests the latest Indian headlines from NewsAPI and reads the available headlines using Windows text-to-speech.
 
 ### 🔊 Text-to-Speech
 
-Jarvis uses **Windows PowerShell's System.Speech** engine to convert text into spoken audio.
+Ultron uses **Windows PowerShell's System.Speech** engine to convert text into spoken audio.
 
-This allows Jarvis to respond verbally instead of only displaying text in the terminal.
+This allows Ultron to respond verbally instead of only displaying text in the terminal.
 
 ### 🎤 Speech Recognition
 
@@ -101,7 +101,7 @@ The project uses the Python `SpeechRecognition` library with Google's speech rec
 The project can be organized like this:
 
 ```text
-Jarvis/
+Ultron/
 │
 ├── main.py
 ├── musicLibrary.py
@@ -111,7 +111,7 @@ Jarvis/
 
 ### `main.py`
 
-Contains the main Jarvis program, including:
+Contains the main Ultron program, including:
 
 * Speech recognition
 * Voice activation
@@ -123,7 +123,7 @@ Contains the main Jarvis program, including:
 
 ### `musicLibrary.py`
 
-Contains the music dictionary used by Jarvis to find and play songs.
+Contains the music dictionary used by Ultron to find and play songs.
 
 Example structure:
 
@@ -140,7 +140,7 @@ Python virtual environment used to keep the project's dependencies isolated from
 
 ---
 
-# ⚙️ How Jarvis Works
+# ⚙️ How Ultron Works
 
 The basic working process is:
 
@@ -151,7 +151,7 @@ The basic working process is:
                       ↓
              ┌─────────────────┐
              │ Listen for      │
-             │ "Jarvis"        │
+             │ "Ultron"        │
              └────────┬────────┘
                       ↓
              ┌─────────────────┐
@@ -159,11 +159,11 @@ The basic working process is:
              │ Recognition     │
              └────────┬────────┘
                       ↓
-              Is it "Jarvis"?
+              Is it "Ultron"?
                  /          \
                No            Yes
                ↓              ↓
-        Keep listening   Activate Jarvis
+        Keep listening   Activate Ultron
                               ↓
                      Listen for command
                               ↓
@@ -219,7 +219,7 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 Move into the project directory:
 
 ```bash
-cd Jarvis
+cd Ultron
 ```
 
 ---
@@ -274,7 +274,7 @@ pip install SpeechRecognition PyAudio requests
 
 # 🔑 5. Configure NewsAPI
 
-Jarvis uses NewsAPI to retrieve news headlines.
+Ultron uses NewsAPI to retrieve news headlines.
 
 Create an account on NewsAPI and obtain an API key.
 
@@ -325,7 +325,7 @@ music = {
 The command:
 
 ```text
-Jarvis
+Ultron
 → Play believer
 ```
 
@@ -333,7 +333,7 @@ will search for `"believer"` in the music dictionary and open its corresponding 
 
 ---
 
-# ▶️ Running Jarvis
+# ▶️ Running Ultron
 
 After activating the virtual environment, run:
 
@@ -341,10 +341,10 @@ After activating the virtual environment, run:
 python main.py
 ```
 
-Jarvis will start with:
+Ultron will start with:
 
 ```text
-Initializing Jarvis
+Initializing Ultron
 ```
 
 The assistant will then wait for the wake word.
@@ -352,10 +352,10 @@ The assistant will then wait for the wake word.
 Say:
 
 ```text
-Jarvis
+Ultron
 ```
 
-Jarvis will respond:
+Ultron will respond:
 
 ```text
 Yes sir, I am listening
@@ -370,39 +370,39 @@ You can then give a command.
 ### Open Google
 
 ```text
-Jarvis
+Ultron
 Open Google
 ```
 
 ### Open YouTube
 
 ```text
-Jarvis
+Ultron
 Open YouTube
 ```
 
 ### Open Instagram
 
 ```text
-Jarvis
+Ultron
 Open Instagram
 ```
 
 ### Play Music
 
 ```text
-Jarvis
+Ultron
 Play believer
 ```
 
 ### Get News
 
 ```text
-Jarvis
+Ultron
 News
 ```
 
-Jarvis will fetch the available headlines and read them aloud.
+Ultron will fetch the available headlines and read them aloud.
 
 ---
 
@@ -421,7 +421,7 @@ is used to convert the microphone input into text.
 The assistant first listens for:
 
 ```text
-Jarvis
+Ultron
 ```
 
 and then listens for the actual command.
@@ -460,7 +460,7 @@ System.Speech.Synthesis.SpeechSynthesizer
 
 to convert text into speech.
 
-This allows Jarvis to provide audible responses.
+This allows Ultron to provide audible responses.
 
 ---
 
@@ -478,19 +478,19 @@ The returned JSON data is then processed to extract article titles.
 
 # 🔮 Future Improvements
 
-This project is currently in development. The long-term goal is to transform Jarvis from a basic command-based voice assistant into a more capable AI assistant.
+This project is currently in development. The long-term goal is to transform Ultron from a basic command-based voice assistant into a more capable AI assistant.
 
 ### 🤖 OpenAI Integration
 
-An upcoming version will integrate an AI model so Jarvis can understand natural-language questions and have more meaningful conversations.
+An upcoming version will integrate an AI model so Ultron can understand natural-language questions and have more meaningful conversations.
 
 For example:
 
 ```text
-Jarvis, explain recursion in Python.
+Ultron, explain recursion in Python.
 ```
 
-Instead of only recognizing predefined commands, Jarvis will be able to process the request and generate an appropriate response.
+Instead of only recognizing predefined commands, Ultron will be able to process the request and generate an appropriate response.
 
 ### Planned Features
 
@@ -580,7 +580,7 @@ Use environment variables for sensitive information as the project becomes more 
 
 # 🎯 Project Goal
 
-The main goal of this project is to build Jarvis step-by-step while learning how different technologies work together.
+The main goal of this project is to build Ultron step-by-step while learning how different technologies work together.
 
 The project started as a simple Python voice assistant and is intended to evolve into a more advanced AI-powered personal assistant.
 
