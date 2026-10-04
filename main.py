@@ -56,6 +56,13 @@ def processCommand(c):
         speak(f"Playing {song}")
         link = musicLibrary.music[song]
         webbrowser.open(link)
+    elif c.lower().startswith("stark"):
+        speak("Don't compare me with Stark. I am much better then him. I am Ultron, the most powerful AI in the world")
+
+    elif c.lower().startswith("hu r u"):
+        speak("I am Ultron, the most powerful AI in the world. I am here to assist you with your commands and provide information.")
+
+
 
     elif "news" in c.lower():
         speak("Opening news")
